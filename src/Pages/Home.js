@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import MenuComponent from '../components/MenuComponent'
+import React from 'react'
 import Nav from '../components/Nav'
 
 

@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React  from 'react'
 import MenuComponent from '../components/MenuComponent'
 import Nav from '../components/Nav'
-import FoodList from '../components/FoodList'
+
 
 
 function BBQMenu(){

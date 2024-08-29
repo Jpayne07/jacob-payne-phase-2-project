@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FoodCard from './FoodCard';
-import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import { Typography } from '@mui/material';
+
 
 function FoodList({foods}){
 

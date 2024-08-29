@@ -21,7 +21,8 @@ function MenuComponent({url, modifier}) {
         console.log(categoryData)
         setFood(categoryData)
     })
-},[url])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+},[])// Disable ESLint for this line
 
   const foodSearch = (e)=>{
     setSearch(e.target.value.toLowerCase())

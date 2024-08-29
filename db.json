@@ -1,0 +1,76 @@
+
+{
+  "menu": [
+      {
+      "category":"BBQ",  
+      "id": "1",
+      "name": "BBQ Ribs",
+      "price": 15.99,
+      "description": "Tender and juicy ribs smoked to perfection.",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1695658519415-fce6a7478753?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {"category":"BBQ", 
+      "id": "2",
+      "name": "Grilled Chicken Wings",
+      "price": 9.99,
+      "description": "Spicy grilled chicken wings with a side of ranch.",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1672498193267-4f0e8c819bc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMHdpbmdzfGVufDB8fDB8fHww"
+    },
+    {"category":"BBQ", 
+      "id": "3",
+      "name": "Pulled Pork Sandwich",
+      "price": 12.49,
+      "description": "Slow-cooked pulled pork served with coleslaw.",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1664476636559-6dbd29f4c31e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHVsbGVkJTIwcG9ya3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {"category":"BBQ", 
+      "id": "4",
+      "name": "BBQ Brisket",
+      "price": 17.99,
+      "description": "Smoked brisket with a side of baked beans.",
+      "imageUrl": "https://images.unsplash.com/photo-1623174460901-2a7830f3016d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpc2tldHxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {"category":"BBQ", 
+      "id": "5",
+      "name": "Grilled Corn on the Cob",
+      "price": 4.99,
+      "description": "Grilled corn seasoned with butter and spices.",
+      "imageUrl": "https://images.unsplash.com/photo-1533520958595-9ffb2b514373?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {"category":"sushi", 
+      "id": "6",
+      "name": "California Roll",
+      "price": 8.99,
+      "description": "Crab, avocado, and cucumber rolled in seaweed and rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1625879741469-63d7efc02e78"
+    },
+    {"category":"sushi", 
+      "id": "7",
+      "name": "Spicy Tuna Roll",
+      "price": 10.49,
+      "description": "Tuna, spicy mayo, and cucumber rolled in seaweed and rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1605249428211-fd979df593e0"
+    },
+    {"category":"sushi", 
+      "id": "8",
+      "name": "Salmon Sashimi",
+      "price": 12.99,
+      "description": "Fresh slices of raw salmon served with soy sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1576817258904-7bcbf7478ae7"
+    },
+    {"category":"sushi", 
+      "id": "9",
+      "name": "Tempura Shrimp Roll",
+      "price": 9.99,
+      "description": "Tempura shrimp, avocado, and cucumber rolled in seaweed and rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1597300961121-924b5c2f012f"
+    },
+    {"category":"sushi", 
+      "id": "10",
+      "name": "Dragon Roll",
+      "price": 14.49,
+      "description": "Eel, cucumber, and avocado topped with sliced avocado and eel sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1614791160508-1f1c9b6f05c0"
+    }
+  ]
+}

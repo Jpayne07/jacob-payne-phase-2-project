@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 
-function FoodCard({food}){
+function FoodCard({ food }){
 
 return(
     <Card sx={{ maxWidth: 345 }}>

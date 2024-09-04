@@ -6,14 +6,17 @@ const [newFoodName, setFoodName] = useState('')
 const [newPrice, setNewPrice] = useState('')
 const [newDescription, setNewDescription] = useState('')
 const [newImage, setNewImage] = useState('')
+const [foodCat, setfoodCat] = useState('')
     
     function addFood(e){
         e.preventDefault()
         const newFood = ({
+            category: foodCat,
             name: newFoodName,
             price: newPrice,
             description: newDescription,
             imageURL: newImage
+            
         })
         
     
@@ -25,6 +28,12 @@ const [newImage, setNewImage] = useState('')
         .then((response) => response.json())
         .then((data) => {
             addNewFood(data)
+            // console.log(data)
+            // setFoodName('')
+            // setNewPrice('')
+            // setNewDescription('')
+            // setNewImage('')
+            // console.log(data)
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -35,6 +44,13 @@ const [newImage, setNewImage] = useState('')
     
     return(
         <form style ={style} onSubmit={addFood}>
+
+            <label htmlFor="foodCategory">Choose a category:</label>
+            <select name="foodCategory" id="foodCategory" onChange={(e)=>setfoodCat(e.target.value)} required>
+            <option value="">--Please choose an option--</option>
+            <option value="BBQ">BBQ</option>
+            <option value="sushi">sushi</option>
+            </select>
 
             <label htmlFor="foodname">Food name: </label> 
             <input id="foodname" name="name" value={newFoodName} onChange={(e)=>setFoodName(e.target.value)}></input>

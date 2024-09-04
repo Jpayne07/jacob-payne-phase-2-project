@@ -31,9 +31,11 @@ function MenuComponent({ url, modifier }) {
   const filteredFood = foodState.filter((food)=> food.name.toLowerCase().includes(search))
 
   function addFood(newFood){
-    setFood([...foodState, newFood])
-  }
-
+    if (newFood.category === modifier) {
+      setFood([...foodState, newFood]);
+    }
+  }  
+  console.log(foodState)
   return (
     <div className="App">
       <header className="App-header">
@@ -44,12 +46,16 @@ function MenuComponent({ url, modifier }) {
           <Container sx={{bgcolor:'White', textAlign:'center', m:'10px', borderRadius: 1}}>{/*Could swap for a div>*/}
             <Typography gutterBottom variant="h5" component="div" sx={{bgcolor:'White', textAlign:'center', p:'20px', borderRadius: 1}}> Our menu</Typography>
 
-            <SearchFood foodSearch = {foodSearch} searchedValue = {search} style={{margin:'20px'}}/>{/*CUSTOM COMPONENTS*/}
+            {/*CUSTOM COMPONENTS*/}
+            <SearchFood foodSearch = {foodSearch} searchedValue = {search} style={{margin:'20px'}}/>
             <AddFood style = {{padding:'20px', textAlign:"left"}} addNewFood = {addFood} url={url} />
+            {/*END CUSTOM COMPONENTS*/}
 
           </Container>
 
+          {/*CUSTOM COMPONENTS*/}
           <FoodList foods = {filteredFood}/>{/*custom FoodList component*/}
+          {/*END CUSTOM COMPONENTS*/}
 
         </Container>        
       </div>

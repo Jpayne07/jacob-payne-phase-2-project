@@ -10,6 +10,7 @@ function MenuComponent({ url, modifier }) {
   const [foodState, setFood] = useState([])
   const [search, setSearch] = useState('')
   // console.log(foodState)
+  //rename and pluralize ambiguous terms
 
     useEffect(()=>{ 
       fetch(url)

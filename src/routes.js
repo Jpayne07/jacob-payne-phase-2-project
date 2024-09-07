@@ -5,9 +5,9 @@ import ErrorPage from "./Pages/ErrorPage.js";
 import Home from "./Pages/Home.js";
 
 const routes = [
-    {path:"/",
+    {   path:"/",
         element: <Home/>,
-    errorElement: <ErrorPage/>
+        errorElement: <ErrorPage/>
     },
     {
         path:"/bbqMenu",

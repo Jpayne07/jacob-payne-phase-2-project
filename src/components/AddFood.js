@@ -18,7 +18,6 @@ const [foodCat, setfoodCat] = useState('')
             imageURL: newImage
             
         })
-        
     
         fetch(url,{
             method:'POST',
@@ -34,7 +33,6 @@ const [foodCat, setfoodCat] = useState('')
             setNewPrice('')
             setNewDescription('')
             setNewImage('')
-            console.log(data)
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -47,21 +45,21 @@ const [foodCat, setfoodCat] = useState('')
         <form style ={style} onSubmit={addFood}>
 
             <label htmlFor="foodCategory">Choose a category:</label>
-            <select name="foodCategory" id="foodCategory" onChange={(e)=>setfoodCat(e.target.value)} required>
+            <select name="foodCategory" id="foodCategory" value = {foodCat} onChange={(e)=>setfoodCat(e.target.value)} required>
             <option value="">--Please choose an option--</option>
             <option value="BBQ">BBQ</option>
             <option value="sushi">sushi</option>
             </select>
-
+            <br></br>
             <label htmlFor="foodname">Food name: </label> 
             <input id="foodname" name="name" value={newFoodName} onChange={(e)=>setFoodName(e.target.value)}></input>
-            
+            <br></br>
             <label htmlFor="foodPrice"> Food price: </label> 
             <input id="foodPrice" name="price" value={newPrice} onChange={(e)=>setNewPrice(e.target.value)}></input>
-            
+            <br></br>
             <label htmlFor="foodDescription" > Food Description: </label> 
             <input id="foodDescription" name="description" value={newDescription} onChange={(e)=>setNewDescription(e.target.value)}></input><br></br>
-            
+            <br></br>
             <label htmlFor="foodImage" > Food image: </label> 
             <input id="foodImage" name="imageURL" value = {newImage} onChange={(e)=>setNewImage(e.target.value)}></input>
 

@@ -9,8 +9,6 @@ function MenuComponent({ url, modifier }) {
 
   const [foodState, setFood] = useState([])
   const [search, setSearch] = useState('')
-  // console.log(foodState)
-  //rename and pluralize ambiguous terms
 
     useEffect(()=>{ 
       fetch(url)
@@ -19,7 +17,6 @@ function MenuComponent({ url, modifier }) {
           const categoryData = data.filter(food=>{
             return food.category === modifier
           })
-          console.log(categoryData)
           setFood(categoryData)
       })
       // eslint-disable-next-line
@@ -36,7 +33,7 @@ function MenuComponent({ url, modifier }) {
       setFood([...foodState, newFood]);
     }
   }  
-  console.log(foodState)
+
   return (
     <div className="App">
       <header className="App-header">

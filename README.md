@@ -1,3 +1,27 @@
+### Project Name
+Jacob Payne Phase 2 Project
+
+### Author
+Jacob Payne
+
+### Description
+
+This project fetches food data from a db and displays the name, price, image, and description
+
+### Functionality
+This project has 5 Components
+
+Add food - which allows a user to add a new food to the DB and update the API
+Food Card - the card component which renders a card for all available data in the db
+Food list - which renders all food cards 
+Search food - allows a user to search a food and filter all others out
+Menu Component - the main component which houses all visible components
+
+### Pages and routes
+The pages are home, sushi, and BBQ.
+
+These pages render the content based on the URL which is passed down into menu components.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -17,7 +41,6 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -26,8 +49,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -68,3 +89,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
